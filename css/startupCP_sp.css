@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* Scss Document */
+/* setting */
+a:link {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  filter: alpha(opacity=80);
+  /* ie 6 7 */
+  -ms-filter: "alpha(opacity=80)";
+}
+
+a:active {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+.pc {
+  display: none !important;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+  font-size: 18px;
+  font-family: AdobeFanHeitiStd-Bold, 微軟正黑體, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  letter-spacing: .025em;
+}
+
+/* .header */
+.header {
+  width: 100%;
+  height: 21px;
+  margin: 0;
+  padding: 9px 0 10px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.logo {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.logo__title {
+  display: block;
+  width: 120px;
+  height: 21px;
+  margin: 0 auto;
+  padding: 0;
+  background: url(../img/logo__title.svg) no-repeat;
+  background-size: 120px 21px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.logo__title a {
+  display: block;
+}
+
+.logo__deco {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 230px;
+  width: 40px;
+  height: 16px;
+  background: url(../img/dec__beta.png) no-repeat;
+  background-size: 40px 16px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+
+
+
+/* .social */
+.social {
+  margin: 0;
+}
+
+.social__box {
+  display: table;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social__btn, .social__btn--fb, .social__btn--tw, .social__btn--line {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.social__btn--fb {
+  background: url(../img/btn__facebook.png) no-repeat;
+  background-size: 40px 40px;
+}
+
+.social__btn--tw {
+  margin: 0 20px;
+  background: url(../img/btn__twitter.png) no-repeat;
+  background-size: 40px 40px;
+}
+
+.social__btn--line {
+  background: url(../img/btn__line.png) no-repeat;
+  background-size: 40px 40px;
+}
+
+.social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.text_red {
+  color: #bf0000;
+}
+
+/* .footer */
+.footer {
+  width: 100%;
+  padding: 0 0 40px;
+  font-size: 13px;
+}
+
+.footer__goal {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: url(../img/dec__goal.png) no-repeat;
+  background-position: right top;
+  background-size: auto 40px;
+}
+
+.footer__airplane {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 1500px;
+  width: 80px;
+  height: 60px;
+  background-image: url(../img/img__airplane--goal.png);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: bottom right;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.footer__search {
+  margin: 0 0 40px 0;
+  padding: 8px;
+  background: #FF41BE;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__searchItem {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.footer__searchItem a {
+  display: inline-block;
+  padding: 6px 25px;
+  border-radius: 18px;
+  border: 1px solid #fff;
+  background: #FF41BE;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer__searchItem a:hover {
+  opacity: 1;
+  background-color: #fff;
+  color: #FF41BE;
+}
+
+.footer__linkBox {
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.footer__link {
+  display: inline-block;
+  margin: 0 0 5px 0;
+  padding: 0 10px;
+  border-right: 1px #333 solid;
+  line-height: 1;
+}
+
+.footer__link a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer__link a:link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer__link:last-child {
+  border-right: none;
+}
+
+.footer__copyright {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer__copyright span {
+  margin: 0 5px 0 0;
+  font-family: sans-serif;
+}
+
+.pageTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 60px!important;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/btn__pagetop.svg);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
